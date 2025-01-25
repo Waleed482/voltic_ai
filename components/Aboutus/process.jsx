@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
@@ -40,19 +41,15 @@ export default function Process() {
   useEffect(() => {
     const handleScroll = () => {
       const section = sectionRef.current;
-
       if (!section) return;
 
-      const { top, bottom, height } = section.getBoundingClientRect(); // Get the section's position and height
+      const { top, bottom, height } = section.getBoundingClientRect();
       const viewportHeight = window.innerHeight;
 
-      // Ensure the calculation accounts for both entering and leaving the viewport
       const progress = Math.min(
         Math.max((viewportHeight - top) / (height + viewportHeight), 0),
         1
       );
-
-      // Convert progress to percentage (0 to 100)
       const position = progress * 100;
       setDotPosition(position);
     };
@@ -68,16 +65,8 @@ export default function Process() {
     >
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2
-          className="font-bold mb-4"
-          style={{ fontSize: "55.7px" }} // Main heading size
-        >
-          OUR PROCESS
-        </h2>
-        <p
-          className="text-gray-300 text-balance leading-relaxed max-w-3xl mx-auto"
-          style={{ fontSize: "20px" }} // Subheading size
-        >
+        <h2 className="text-[55.7px] font-bold mb-4">OUR PROCESS</h2>
+        <p className="text-[20px] text-gray-300 leading-relaxed">
           Discover how our streamlined process transforms your vision into
           impactful digital solutions, driving growth and meaningful results.
         </p>
@@ -90,9 +79,7 @@ export default function Process() {
         {/* Moving Dot */}
         <motion.div
           className="absolute left-1/2 w-4 h-4 bg-blue-700 rounded-full z-20 transform -translate-x-1/2"
-          style={{
-            top: `${dotPosition}%`, // Dot position as percentage
-          }}
+          style={{ top: `${dotPosition}%` }}
           animate={{ top: `${dotPosition}%` }}
           transition={{ type: "spring", stiffness: 100, damping: 20 }}
         ></motion.div>
@@ -106,26 +93,16 @@ export default function Process() {
               }`}
             >
               <div className="flex-1 px-6">
-                <h3
-                  className="font-bold mb-4"
-                  style={{ fontSize: "40px" }} // Step heading size
-                >
-                  {step.title}
-                </h3>
-                <p
-                  className="text-gray-300"
-                  style={{ fontSize: "24px" }} // Step description size
-                >
-                  {step.description}
-                </p>
+                <h3 className="text-[40px] font-bold mb-4">{step.title}</h3>
+                <p className="text-[24px] text-gray-300">{step.description}</p>
               </div>
 
               <div className="flex-1 px-6">
                 <Image
                   src={step.image}
                   alt={step.title}
-                  width={478.25} // Updated width
-                  height={389.95} // Updated height
+                  width={478.25}
+                  height={389.95}
                   className="rounded-lg shadow-lg"
                 />
               </div>
