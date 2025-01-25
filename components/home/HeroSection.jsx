@@ -65,7 +65,7 @@ const HeroSection = () => {
       </div>
 
       {/* Down Arrow */}
-      <div className="relative flex justify-end right-20 md:right-60 !-mb-[50] z-50">
+      <div className="relative flex justify-end right-20 md:right-60 mb-[!50] z-50">
         <Link href="#services">
           <Image src={DownArrow} alt="Down Arrow" width={120} height={120} />
         </Link>
