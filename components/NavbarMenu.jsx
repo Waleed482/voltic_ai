@@ -51,7 +51,7 @@ const NavbarMenu = () => {
               </Link>
             </li>
             <li>
-              <Link href="/home#services" className="font-medium hover:text-gray-400">
+              <Link href="/#services" className="font-medium hover:text-gray-400">
                 Services
               </Link>
             </li>
