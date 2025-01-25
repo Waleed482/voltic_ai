@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const backgroundImage = "@/aboutus_img/aboutUs_3.jpg";
+const backgroundImage = "/aboutus_img/aboutUs_3.jpg";
 
 export default function Mission() {
   return (
