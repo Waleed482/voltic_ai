@@ -7,7 +7,7 @@ import Link from "next/link";
 const ContactNow = () => {
   return (
     <>
-      <div className="bg-black py-10">
+      <div className="bg-black ">
         <section className="relative rounded-3xl bg-blue-800 text-white py-16">
           {/* Background Image */}
           <div className="absolute inset-0 w-full h-full">

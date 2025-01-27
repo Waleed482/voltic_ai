@@ -58,9 +58,11 @@ const HeroSection = () => {
             From custom software to innovative applications, we empower
             businesses with technology that creates impact.
           </p>
-          <button className="rounded-full bg-white text-blue-800 font-semibold px-6 py-3 flex items-center justify-center hover:bg-gray-100 transition">
+          <Link href="/contact-us">
+          <button  className="rounded-full bg-white text-blue-800 font-semibold px-6 py-3 flex items-center justify-center hover:bg-gray-100 transition">
             GET STARTED <CallMadeIcon className="ml-2" />
           </button>
+          </Link>
         </div>
       </div>
 

@@ -89,7 +89,7 @@ const Slider = () => {
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="min-w-[90%] md:min-w-[70%] lg:min-w-[60%] mx-4 bg-gray-900 rounded-lg p-8 shadow-lg flex flex-col justify-between transition-all duration-300"
+                className="min-w-[90%] md:min-w-[70%] lg:min-w-[60%]  mx-4 bg-gray-900  rounded-lg p-8 shadow-lg flex flex-col justify-between transition-all duration-300"
               >
                 {/* Client Info */}
                 <div className="flex items-center mb-4">
@@ -106,7 +106,7 @@ const Slider = () => {
                   </div>
                 </div>
                 {/* Feedback */}
-                <p className="text-gray-300 text-base mt-4">
+                <p className="text-gray-300 text-[40px] ">
                   {testimonial.feedback}
                 </p>
               </div>
@@ -117,7 +117,7 @@ const Slider = () => {
           <div className="flex justify-center items-center gap-6 mt-8">
             <button
               onClick={handlePrev}
-              className="bg-gray-700 text-white rounded-full w-14 h-14 flex items-center justify-center hover:bg-gray-600 transition"
+              className=" border border-white text-white rounded-full w-14 h-14 flex items-center justify-center hover:bg-gray-600 transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@ const Slider = () => {
             </button>
             <button
               onClick={handleNext}
-              className="bg-gray-700 text-white rounded-full w-14 h-14 flex items-center justify-center hover:bg-gray-600 transition"
+              className="bg-[#1A1A1A] text-white rounded-full w-14 h-14 flex items-center justify-center hover:bg-gray-600 transition"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

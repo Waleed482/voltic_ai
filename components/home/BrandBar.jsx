@@ -16,8 +16,8 @@ const BrandBar = () => {
   ];
 
   return (
-    <div className="bg-black opacity-90 py-8">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="bg-black opacity-90 h-[269px] flex items-center py-8">
+      <div className="max-w-7xl mx-auto  px-6">
         <div className="flex justify-center items-center space-x-8 md:space-x-16">
           {brands.map((brand, index) => (
             <Image

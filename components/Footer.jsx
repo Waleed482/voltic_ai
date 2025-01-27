@@ -11,32 +11,35 @@ import you from "@/public/imageFooter/you.png";
 const Footer = () => {
   // Social Links Data
   const socialLinks = [
-    { href: "#", src: link, alt: "LinkedIn" },
-    { href: "#", src: insta, alt: "Instagram" },
-    { href: "#", src: pin, alt: "Pinterest" },
-    { href: "#", src: you, alt: "YouTube" },
-    { href: "#", src: tweeter, alt: "Twitter" },
+    { href: "https://www.linkedin.com/", src: link, alt: "LinkedIn" },
+    { href: "https://www.instagram.com/", src: insta, alt: "Instagram" },
+    { href: "https://www.pinterest.com/", src: pin, alt: "Pinterest" },
+    { href: "https://www.youtube.com/", src: you, alt: "YouTube" },
+    { href: "https://x.com/", src: tweeter, alt: "Twitter" },
   ];
 
   return (
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo and Contact Section */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col ">
           <Link href="/">
             <Image src={Logo} alt="Logo" width={60} height={60} />
           </Link>
-          <p className="text-lg font-normal mt-4">Voltic.inc</p>
+          <div className="gap-y-[8px]">
+          <p className="text-lg font-normal ">Voltic.inc</p>
+          <p className="text-lg font-normal ">+1 206 701 6598</p>
           <p className="text-lg font-normal">info@voltic.agency</p>
+
+          </div>
+          
         </div>
 
         {/* Office Info Section */}
         <div className="text-center md:text-left">
           <h3 className="text-[20px] font-bold">OUR OFFICE</h3>
           <p className="text-[19px] font-normal mt-4">
-            Meezan Executive Tower<br />
-            Liaqat Road, Faisalabad<br />
-            8th floor, 1st & 2nd Office
+          16192 Coastal Highway <br /> Lewes, DE 19958
           </p>
         </div>
 
@@ -61,8 +64,8 @@ const Footer = () => {
 
       {/* Footer Bottom Section */}
       <div className=" max-w-7xl  mx-auto  px-6 mt-8 pt-4 flex flex-col md:flex-row justify-between items-start text-gray-400 text-[20px]">
-        <p>© 2025 All rights are reserved</p>
-        <Link href="#" className="hover:text-white ">
+        <p>Copyright 2025, All Rights Reserved by Voltic.ai</p>
+        <Link href="/contact-us" className="hover:text-white ">
           Terms & Conditions
         </Link>
       </div>
